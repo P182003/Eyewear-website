@@ -1,0 +1,700 @@
+<html>
+ <head>
+  <title>
+   Eyewear Website
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;600;700;800&amp;family=Poppins:wght@400;600&amp;family=Monoton&amp;family=Kurale&amp;display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .ebzoom:hover {
+      transform: scale(1.05);
+      transition: transform 0.7s;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <header class="flex justify-between items-center p-4">
+      <div class="flex items-center">
+          <img alt="Glasses Shop Logo" class="h-12" height="60" src="https://th.bing.com/th/id/OIP.a9YiHJ9I19Mf9noiW5W4VwHaHX?w=200&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="100"/>
+          <span class="text-2xl font-bold text-black-600 ml-2">Glasses Shopping</span>
+      </div>
+      <nav>
+          <ul class="flex space-x-6">
+              <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="#">Track Order</a>
+              </li>
+              <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="#">Wishlist</a>
+              </li>
+              <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="#">Cart</a>
+              </li>
+              <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="#">Sign In/Sign Up</a>
+              </li>
+              <li>
+                  <a class="text-gray-600 hover:text-gray-800" href="#">Contact Us</a>
+              </li>
+          </ul>
+      </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="relative bg-gray-900 text-white py-20">
+   <div class="swiper-container">
+    <div class="swiper-wrapper">
+     <div class="swiper-slide">
+      <img alt="Hero background image of stylish eyewear" class="w-full h-full object-cover opacity-50" src="https://parsal.brickthemes.com/wp-content/uploads/2022/06/slide3.jpg"/>
+      <div class="absolute inset-6 flex items-center justify-left">
+       <div class="text-align: left">
+        <p class="text-2xl font-bold">
+         This Summer
+        </p>
+        <h1 class="text-5xl font-bold mt-4">
+         Variety Styles in Fashionable Eyewear
+        </h1>
+       </div>
+      </div>
+     </div>
+     <div class="swiper-slide">
+      <img alt="Hero background image of stylish eyewear" class="w-full h-full object-cover opacity-50" src="https://parsal.brickthemes.com/wp-content/uploads/2022/06/slide2.jpg"/>
+      <div class="absolute inset-24 flex items-center justify-left">
+       <div class="text-align: left">
+        <p class="text-2xl font-bold">
+         New Arrivals
+        </p>
+        <h1 class="text-5xl font-bold mt-4">
+         Discover the Latest Trends
+        </h1>
+       </div>
+      </div>
+     </div>
+     <div class="swiper-slide">
+      <img alt="Hero background image of stylish eyewear" class="w-full h-full object-cover opacity-50" src="https://parsal.brickthemes.com/wp-content/uploads/2022/06/slide1.jpg"/>
+      <div class="absolute inset-24 flex items-center justify-left">
+       <div class="text-align: left">
+        <p class="text-2xl font-bold">
+         Exclusive Collection
+        </p>
+        <h1 class="text-5xl font-bold mt-4">
+         Shop the Best Eyewear
+        </h1>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination">
+    </div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next">
+    </div>
+    <div class="swiper-button-prev">
+    </div>
+   </div>
+  </div>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+  </script>
+  <!-- Initialize Swiper -->
+  <script>
+   var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 5000,
+      },
+    });
+  </script>
+  <!-- Trending Brands Section -->
+  <div class="bg-white py-16">
+   <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8" style="font-family: 'Monoton', cursive;">
+     MOST  TRENDING  BRANDS
+    </h2>
+    <h3 class="text-3xl font-bold mb-4" style="font-family: 'Kurale', serif;">
+     Shop by Brands
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+     <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+      <img alt="Ray-Ban brand logo" class="w-full h-48 object-cover mb-4 rounded" src="http://opticals.w4u.us/uploads/3555/rayban-lm6kbm-2wcyse.png"/>
+     </div>
+     <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+      <img alt="Cartier brand logo" class="w-full h-48 object-cover mb-4 rounded" src="http://opticals.w4u.us/uploads/3555/cartier-xfxp69-9px39w.png"/>
+     </div>
+     <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+      <img alt="Oakley brand logo" class="w-full h-48 object-cover mb-4 rounded" src="http://opticals.w4u.us/uploads/3555/oakley-ooe1g9-5fsq8l.png"/>
+     </div>
+     <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+      <img alt="Gucci brand logo" class="w-full h-48 object-cover mb-4 rounded" src="http://opticals.w4u.us/uploads/3555/gucci-tmsqr7-89x87p.png"/>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Main Categories Section -->
+  <div class="bg-gray-100 py-16">
+   <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8" style="font-family: 'Monoton', cursive;">
+     PRESCRIPTION SUNGLASSES
+    </h2>
+    <h3 class="text-3xl font-bold mb-4" style="font-family: 'Kurale', serif;">
+     Our Main Categories
+    </h3>
+    <p class="text-lg mb-8" style="font-family: 'Kurale', serif;">
+     Working with luxury fashion brands and trusted eyewear suppliers from across the world, we stock a wide range of glasses and sunglasses styles, from timeless classics to the latest trends – so whatever you are looking for, we have it.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Sunglasses category image" class="w-full h-48 object-cover mb-4 rounded ebzoom" src="https://i.pinimg.com/236x/a8/52/96/a85296bf6128d488c06529abae40dcf3.jpg"/>
+      <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+       Sun Glasses
+      </h3>
+      <p class="text-gray-700">
+       The perfect way to enhance your style.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Reading glasses category image" class="w-full h-48 object-cover mb-4 rounded ebzoom" src="https://res2022.aoolia.com/product/f/2/800x800/649a4e06bde2f.jpg"/>
+      <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+       Reading Glasses
+      </h3>
+      <p class="text-gray-700">
+       The perfect way to enhance your style.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Stylish eyewear category image" class="w-full h-48 object-cover mb-4 rounded ebzoom" src="https://th.bing.com/th/id/OIP.nK3jx_e6ZmFuOrDBSH-k0QHaHa?w=186&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
+      <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+       Stylish Eyewear
+      </h3>
+      <p class="text-gray-700">
+       The perfect way to enhance your style.
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Newsletter Section -->
+  <div class="relative bg-gray-200 py-16">
+    <img src="https://th.bing.com/th/id/OIP.wx7hdVH_c0Loy_xLt_n63QHaE7?w=509&h=339&rs=1&pid=ImgDetMain" alt="Newsletter subscription image showing stylish eyewear" class="absolute inset-0 w-full h-full object-cover opacity-50 z-0">
+    <div class="container mx-auto text-center relative z-10">
+      <h2 class="text-3xl font-bold mb-4" style="font-family: 'Kurale', serif;">
+        Get The Inside Scoop On New Frames, Events, And More.
+      </h2>
+      <p class="text-lg mb-8" style="font-family: 'Kurale', serif;">
+        Parsal eyewear is the perfect blend of fashion and function. The stylish frames fit comfortably and look great on any face.
+      </p>
+    </div>
+  </div>
+  <!-- Features Section -->
+  <div class="bg-white py-16">
+   <div class="container mx-auto text-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+     <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+      <img alt="Global shipping icon" class="w-24 h-24 mx-auto mb-4" src="http://opticals.w4u.us/uploads/3555/parachute-jfmryw.png"/>
+      <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+       Global Shipping
+      </h3>
+      <p class="text-gray-700">
+        Access to a variety of eyewear styles, including unique and trendy designs that may not be available globally, Ability to purchase from exclusive brands or collections that are not sold in your country.
+      </p>
+     </div>
+     <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+      <img alt="Privacy respect icon" class="w-24 h-24 mx-auto mb-4" src="http://opticals.w4u.us/uploads/3555/padlock-rtjfgo.png"/>
+      <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+       Privacy Respect
+      </h3>
+      <p class="text-gray-700">
+        we prioritize your privacy and are committed to protecting your personal information. When you shop for eyewear with us, you can trust that your data is handled with the utmost care.
+      </p>
+     </div>
+     <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+      <img alt="Highest quality icon" class="w-24 h-24 mx-auto mb-4" src="http://opticals.w4u.us/uploads/3555/shining-8cx06n.png"/>
+      <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+       Highest Quality
+      </h3>
+      <p class="text-gray-700">
+        We believe that eyewear is not just a necessity but a statement of style and individuality. That’s why we are committed to providing our customers with the highest quality eyewear available.
+      </p>
+     </div>
+     <div class="bg-gray-200 p-6 rounded-lg shadow-lg">
+      <img alt="Taylor-made icon" class="w-24 h-24 mx-auto mb-4" src="http://opticals.w4u.us/uploads/3555/pencil-and-ruler-(2)-w6ej6s.png"/>
+      <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+       Taylor-Made
+      </h3>
+      <p class="text-gray-700">
+        Choose from a variety of lens types, including single vision, bifocal, and progressive lenses, along with specialized coatings for UV protection, anti-reflective properties, and blue light filtering.
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Blog Section -->
+  <div class="bg-gray-100 py-16"  style="background-image:url(https://static.payneglasses.com/media/catalog/product/6/7/6769k15_1691204505663.jpg)">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8" style="font-family: 'Kurale', serif;">
+     FROM OUR BLOG
+    </h2>
+    <h3 class="text-2xl font-bold mb-4" style="font-family: 'Kurale', serif;">
+     Daily Insight Enhance Knowledge.
+    </h3>
+    <p class="text-lg mb-8" style="font-family: 'Kurale', serif;">
+     Need a new pair of designer glasses? Choose your favorite style from the most luxurious brands in the eyewear industry, then add your premium prescription lenses in single vision or varifocal.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Blog post image 1" class="w-full h-48 object-cover mb-4 rounded" src="https://th.bing.com/th/id/OIP.15Ol5Xv6ervlyqpcEfRM4AHaE8?w=274&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
+      <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+       Get the Wimbledon look at fashion eyewear
+      </h3>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Blog post image 2" class="w-full h-48 object-cover mb-4 rounded" src="https://th.bing.com/th/id/OIP.NgfLst8ZrsqfB3RP5JguXwHaEK?w=329&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
+      <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+       Glasses trends you need this summer
+      </h3>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Blog post image 3" class="w-full h-48 object-cover mb-4 rounded" src="https://th.bing.com/th/id/OIP.nOps9FF2p3Hp-0FWCiK0-gHaD3?w=332&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
+      <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+       Clean your glasses in style with fingerprints
+      </h3>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Best Sellers Section -->
+  <div class="bg-white py-16">
+   <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8" style="font-family: 'Monoton', cursive;">
+     Most Sales in the Month
+    </h2>
+    <h3 class="text-3xl font-bold mb-4" style="font-family: 'Kurale', serif;">
+     Our Main Categories
+    </h3>
+    <p class="text-lg mb-8" style="font-family: 'Kurale', serif;">
+     Working with luxury fashion brands and trusted eyewear suppliers from across the world, we stock a wide range of glasses and sunglasses styles, from timeless classics to the latest trends – so whatever you are looking for, we have it.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <a href="product1.html">
+          <img alt="Best seller product 1" class="w-full h-48 object-cover mb-4 rounded" src="https://m.media-amazon.com/images/I/61Fl5lhC97L._SX522_.jpg"/>
+            <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+                Tony Stark Retro Vintage
+            </h3>
+            <p class="text-gray-700">
+              <del>₹8,490 </del>
+              (10% Off)
+              ₹7,641
+            </p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+        </a>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Tony Stark Retro Vintage - ₹7,641">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <a href="product2.html">
+          <img alt="Best seller product 2" class="w-full h-48 object-cover mb-4 rounded" src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s15407-c1-sunglasses_g_2711_07_02_2023.jpg"/>
+            <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+              Vincent Chase Polarised
+            </h3>
+            <p class="text-gray-700">
+              <del>₹ 2,000</del>
+              (25% OFF)
+              ₹ 1,500.00
+            </p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+        </a>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Vincent Chase Polarised - ₹1,500.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <a href="product3.html">
+            <img alt="Best seller product 3" class="w-full h-48 object-cover mb-4 rounded" src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//j/i/pink-gold-pink-full-rim-cat-eye-john-jacobs-tr-flex-jj-e-14409-c6-eyeglasses__dsc5657.jpg"/>
+            <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+                John Jacobs
+            </h3>
+            <p class="text-gray-700">
+                <del>₹ 4,000 </del>
+                (13% OFF)
+                ₹ 3,500.00
+            </p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+        </a>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="John Jacobs - ₹3,500.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <a href="product4.html">
+          <img alt="Best seller product 4" class="w-full h-48 object-cover mb-4 rounded" src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//h/i/pink-mirror-pink-full-rim-geometric-kids-8-12-yrs-hooper-hooper-sunnies-hps000197-sunglasses__dsc9020_16_01_2025.jpg"/>
+            <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+              Hooper
+            </h3>
+            <p class="text-gray-700">
+              <del>₹ 1,000 </del> 
+              (40% OFF)
+              ₹ 600.00
+            </p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+        </a>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Hooper - ₹600.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <a href="product5.html">
+            <img alt="Best seller product 5" class="w-full h-48 object-cover mb-4 rounded" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/29703210/2024/5/23/5000a509-d9d4-4109-aa8b-b189a37903721716437615877Frames1.jpg"/>
+            <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+                VOGUE EYEWEAR
+            </h3>
+            <p class="text-gray-700">
+                <del>₹10,000</del>
+                (25% OFF)
+                ₹ 8,000.00
+            </p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+        </a>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="VOGUE EYEWEAR - ₹8,000.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <a href="product6.html">
+            <img alt="Best seller product 6" class="w-full h-48 object-cover mb-4 rounded" src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb1%2F16%2Fb11632aa1bca881b277cb24ca32f2a0049ff000d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"/>
+            <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+                SUNGLASSES
+            </h3>
+            <p class="text-gray-700">
+                ₹ 1,299.00
+            </p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+        </a>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="SUNGLASSES - ₹1,299.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <a href="product7.html">
+            <img alt="Best seller product 7" class="w-full h-48 object-cover mb-4 rounded" src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F5e%2F8f%2F5e8f07d402ede18c0ac58f6c0805287745e703bb.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"/>
+            <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+                Polarised sunglasses
+            </h3>
+            <p class="text-gray-700">
+                ₹ 1,999.00
+            </p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+        </a>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Polarised sunglasses - ₹1,999.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <a href="product8.html">
+            <img alt="Best seller product 8" class="w-full h-48 object-cover mb-4 rounded" src="https://m.media-amazon.com/images/I/41yVZGxe+yL.SX679.jpg"/>
+            <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+                grey jack Square Polarized 
+            </h3>
+            <p class="text-gray-700">
+                <del>₹1,999</del>
+                (35% OFF)
+                ₹ 1,164.00
+            </p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+        </a>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="grey jack Square Polarized - ₹1,164.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <a href="product9.html">
+            <img alt="Best seller product 9" class="w-full h-48 object-cover mb-4 rounded" src="https://m.media-amazon.com/images/I/4199m-YeyBL.jpg"/>
+            <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+                Zero Power Computer Glasses
+            </h3>
+            <p class="text-gray-700">
+                <del>₹3,500.00</del>
+                (77% OFF)
+                ₹ 799.00
+            </p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+        </a>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Zero Power Computer Glasses - ₹799.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+        <a href="product10.html">
+            <img alt="Best seller product 10" class="w-full h-48 object-cover mb-4 rounded" src="https://m.media-amazon.com/images/I/41v2DVsjl0L.jpg"/>
+            <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+              Lightweight & Blocks Harmful Rays
+            </h3>
+            <p class="text-gray-700">
+              <del>₹3,500</del>
+              (73% OFF)
+              ₹ 949.00
+            </p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+        </a>
+        <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Lightweight & Blocks Harmful Rays - ₹949.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <img alt="Best seller product 11" class="w-full h-48 object-cover mb-4 rounded" src="https://m.media-amazon.com/images/I/41k3qIMiHDL.SX679.jpg"/>
+          <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+              Poshh Eyewear 3in1
+          </h3>
+          <p class="text-gray-700">
+              <del>₹3,999</del>
+              (63% OFF)
+              ₹ 1,499.00
+          </p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+          <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Poshh Eyewear 3in1 - ₹1,499.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <img alt="Best seller product 12" class="w-full h-48 object-cover mb-4 rounded" src="https://m.media-amazon.com/images/I/51fJ3g0ZBiL.SX679.jpg"/>
+          <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+              Karsaer Cat Eye Glasses
+          </h3>
+          <p class="text-gray-700">
+              <del>₹1,648</del>
+              (40% OFF)
+              ₹ 989.00
+          </p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+          <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Karsaer Cat Eye Glasses - ₹989.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <img alt="Best seller product 13" class="w-full h-48 object-cover mb-4 rounded" src="https://m.media-amazon.com/images/I/41yVZGxe+yL.SX679.jpg"/>
+          <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+              Jack Polarized Sunglasses
+          </h3>
+          <p class="text-gray-700">
+              <del>₹1,999</del>
+              (35% OFF)
+              ₹ 1,299.00
+          </p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+          <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Jack Polarized Sunglasses - ₹1,299.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <img alt="Best seller product 14" class="w-full h-48 object-cover mb-4 rounded" src="https://cdn-images.farfetch-contents.com/14/01/35/47/14013547_54573981_1000.jpg"/>
+          <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+              Balenciaga Eyewear
+          </h3>
+          <p class="text-gray-700">
+              ₹ 71,299.00
+          </p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+          <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Balenciaga Eyewear - ₹71,299.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <img alt="Best seller product 15" class="w-full h-48 object-cover mb-4 rounded" src="https://cdn-images.farfetch-contents.com/22/50/45/74/22504574_52545761_1000.jpg"/>
+          <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+              Gucci Eyewear
+          </h3>
+          <p class="text-gray-700">
+              ₹ 32,849.00
+          </p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+          <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Gucci Eyewear - ₹32,849.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <img alt="Best seller product 16" class="w-full h-48 object-cover mb-4 rounded" src="https://images-static.nykaa.com/media/catalog/product/c/8/c897636716736794280_P00.jpg"/>
+          <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+              Dsquared Cat Sunglass 
+          </h3>
+          <p class="text-gray-700">
+              <del>₹18,400</del>
+              (15% OFF)
+              ₹ 15,640.00
+          </p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+          <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Dsquared Cat Sunglass - ₹15,640.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <img alt="Best seller product 17" class="w-full h-48 object-cover mb-4 rounded" src="https://sunglassic.com/cdn/shop/products/H1d3c06f070184f959fc6e42e1ba4e996o_1.png?v=1640154572&width=800"/>
+          <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+              Rebel Edition
+          </h3>
+          <p class="text-gray-700">
+              <del>₹2,499</del>
+              ₹ 1,299.00
+          </p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+          <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Rebel Edition - ₹1,299.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <img alt="Best seller product 18" class="w-full h-48 object-cover mb-4 rounded" src="https://cdn-images.farfetch-contents.com/21/67/63/80/21676380_51629895_1000.jpg"/>
+          <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+              Cartier Eyewear
+          </h3>
+          <p class="text-gray-700">
+              ₹ 1,54,698.00
+          </p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+          <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Cartier Eyewear - ₹1,54,698.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <img alt="Best seller product 19" class="w-full h-48 object-cover mb-4 rounded" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2350062/2018/10/9/19b8446a-9961-41da-b0bb-bf3301b48bed1539079915479-OAKLEY-Men-Polarised--UV-Protected-Sports-Sunglasses-0OO9208-6.jpg"/>
+          <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+              OAKLEY
+          </h3>
+          <p class="text-gray-700">
+              <del>₹13,590</del>
+              (35% OFF)
+              ₹ 12,231.00
+          </p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+          <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="OAKLEY - ₹12,231.00">Add to Wishlist</button>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+          <img alt="Best seller product 20" class="w-full h-48 object-cover mb-4 rounded" src="https://m.media-amazon.com/images/I/712w3DYBdPL.AC_SX569.jpg"/>
+          <h3 class="text-xl font-bold mb-2" style="font-family: 'Kurale', serif;">
+              Halloween Flame Glasses
+          </h3>
+          <p class="text-gray-700">
+            ₹ 4,949.00
+          </p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded mt-4">Buy Now</button>
+          <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 add-to-wishlist" data-product="Halloween Flame Glasses - ₹4,949.00">Add to Wishlist</button>
+          &lt;
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100 py-10">
+    <div class="container mx-auto text-center">
+        <div class="flex flex-wrap justify-center">
+            <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://th.bing.com/th/id/OIP.a9YiHJ9I19Mf9noiW5W4VwHaHX?w=200&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image of a stylish wavy background with mobiles" class="h-32 mx-auto">
+                    <h3 class="text-2xl font-bold mt-4">Developed by Prakruthi HS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div id="modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-1/2">
+      <div class="flex justify-between items-center mb-4">
+        <h2 id="modal-title" class="text-2xl font-bold"></h2>
+        <button id="close-modal" class="text-gray-600 hover:text-gray-800">&times;</button>
+      </div>
+      <div id="modal-content">
+        <!-- Content will be injected here -->
+      </div>
+    </div>
+  </div>
+  <!-- Modal JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const modal = document.getElementById('modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalContent = document.getElementById('modal-content');
+      const closeModal = document.getElementById('close-modal');
+      let wishlist = [];
+
+      document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          const option = this.textContent.trim();
+          modalTitle.textContent = option;
+
+          if (option === 'Sign In/Sign Up') {
+            modalContent.innerHTML = `
+              <form>
+                <label for="email" class="block text-gray-700">Mobile / Email</label>
+                <input type="text" id="email" name="email" class="w-full p-2 border border-gray-300 rounded mt-2 mb-4" placeholder="Enter your mobile or email">
+                <p class="text-red-500 text-sm mb-4">Please enter a valid Email or Mobile Number</p>
+                <div class="flex items-center mb-4">
+                  <input type="checkbox" id="whatsapp" name="whatsapp" class="mr-2">
+                  <label for="whatsapp" class="text-gray-700">Get updates on Whatsapp</label>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Sign In</button>
+                <p class="mt-4">New member? <a href="#" class="text-blue-500">Create an Account</a></p>
+              </form>
+            `;
+          } else if (option === 'Track Order') {
+            modalContent.innerHTML = `
+              <form>
+                <label for="order-id" class="block text-gray-700">Order ID</label>
+                <input type="text" id="order-id" name="order-id" class="w-full p-2 border border-gray-300 rounded mt-2 mb-4" placeholder="Enter your order ID">
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Track Order</button>
+              </form>
+            `;
+          } else if (option === 'Wishlist') {
+            if (wishlist.length === 0) {
+              modalContent.innerHTML = `
+                <div>
+                  <h3 class="text-xl font-bold mb-4">PRODUCTS (0)</h3>
+                  <p>You have not selected any product to compare.</p>
+                  <p>Please add products of your choice and view here.</p>
+                </div>
+              `;
+            } else {
+              modalContent.innerHTML = `
+                <div>
+                  <h3 class="text-xl font-bold mb-4">PRODUCTS (${wishlist.length})</h3>
+                  <ul class="mb-4">
+                    ${wishlist.map(product => `<li class="mb-2">${product} <button class="text-red-500 remove-from-wishlist" data-product="${product}">X</button></li>`).join('')}
+                  </ul>
+                  <button class="bg-red-500 text-white px-4 py-2 rounded clear-wishlist">Clear list</button>
+                </div>
+              `;
+            }
+          } else {
+            modalContent.innerHTML = `<p>Content for ${option}</p>`;
+          }
+
+          modal.classList.remove('hidden');
+        });
+      });
+
+      document.addEventListener('click', function (event) {
+        if (event.target.classList.contains('add-to-wishlist')) {
+          const product = event.target.getAttribute('data-product');
+          if (!wishlist.includes(product)) {
+            wishlist.push(product);
+          }
+        } else if (event.target.classList.contains('remove-from-wishlist')) {
+          const product = event.target.getAttribute('data-product');
+          wishlist = wishlist.filter(item => item !== product);
+        } else if (event.target.classList.contains('clear-wishlist')) {
+          wishlist = [];
+        }
+
+        if (modalTitle.textContent === 'Wishlist') {
+          if (wishlist.length === 0) {
+            modalContent.innerHTML = `
+              <div>
+                <h3 class="text-xl font-bold mb-4">PRODUCTS (0)</h3>
+                <p>You have not selected any product to compare.</p>
+                <p>Please add products of your choice and view here.</p>
+              </div>
+            `;
+          } else {
+            modalContent.innerHTML = `
+              <div>
+                <h3 class="text-xl font-bold mb-4">PRODUCTS (${wishlist.length})</h3>
+                <ul class="mb-4">
+                  ${wishlist.map(product => `<li class="mb-2">${product} <button class="text-red-500 remove-from-wishlist" data-product="${product}">X</button></li>`).join('')}
+                </ul>
+                <button class="bg-red-500 text-white px-4 py-2 rounded clear-wishlist">Clear list</button>
+              </div>
+            `;
+          }
+        }
+      });
+
+      closeModal.addEventListener('click', function () {
+        modal.classList.add('hidden');
+      });
+
+      window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+          modal.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+ </body>
+</html>

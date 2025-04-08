@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Tony Stark Retro Vintage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Monoton&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="bg-white py-16">
+        <div class="container mx-auto">
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2">
+                    <div class="flex flex-col items-center">
+                        <img id="mainImage" alt="Tony Stark Retro Vintage" class="w-full h-96 object-cover mb-4 rounded" src="https://m.media-amazon.com/images/I/61Fl5lhC97L._SX522_.jpg"/>
+                        <div class="flex space-x-4">
+                            <img onclick="changeImage(this)" alt="Tony Stark Retro Vintage - Side View" class="w-24 h-24 object-cover rounded cursor-pointer" src="https://m.media-amazon.com/images/I/71vbgFzHqgL._SX522_.jpg"/>
+                            <img onclick="changeImage(this)" alt="Tony Stark Retro Vintage - Front View" class="w-24 h-24 object-cover rounded cursor-pointer" src="https://m.media-amazon.com/images/I/61hUhkdrZiL._SX522_.jpg"/>
+                            <img onclick="changeImage(this)" alt="Tony Stark Retro Vintage - Angled View" class="w-24 h-24 object-cover rounded cursor-pointer" src="https://m.media-amazon.com/images/I/41umAvLKkvL.jpg"/>
+                            <img onclick="changeImage(this)" alt="Tony Stark Retro Vintage - Frame View" class="w-24 h-24 object-cover rounded cursor-pointer" src="https://m.media-amazon.com/images/I/416Qp9aN6dL.jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 lg:pl-10">
+                    <h2 class="text-4xl font-bold mb-4" style="font-family: 'Kurale', serif;">Tony Stark Retro Vintage</h2>
+                    <p class="text-gray-700 mb-4">
+                        <del>₹8,490 </del>
+                        (10% Off)
+                        ₹7,641
+                    </p>
+                    <p class="text-lg mb-4" style="font-family: 'Kurale', serif;">
+                        UV400 PROTECTION FOR YOUR EYES – Tony Stark's anti-reflective sunglasses with UV400 lenses can filter out sunlight reflected glare, and protect your eyes from long term damage by blocking 100% of harmful UVA and UVB rays.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="bg-green-500 text-white px-4 py-2 rounded">Add to Cart</button>
+                        <button class="bg-red-500 text-white px-4 py-2 rounded" onclick="openWishlistModal()">Add to Wishlist</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Modal -->
+    <div id="wishlistModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white p-8 rounded shadow-lg w-1/2">
+            <h2 class="text-2xl font-bold mb-4">Wishlist</h2>
+            <div class="flex items-center mb-4">
+                <img alt="Tony Stark Retro Vintage" class="w-24 h-24 object-cover rounded mr-4" src="https://m.media-amazon.com/images/I/61Fl5lhC97L._SX522_.jpg"/>
+                <div>
+                    <h3 class="text-xl font-bold">Tony Stark Retro Vintage</h3>
+                    <p class="text-gray-700">
+                        <del>₹8,490 </del>
+                        (10% Off)
+                        ₹7,641
+                    </p>
+                </div>
+            </div>
+            <button class="bg-red-500 text-white px-4 py-2 rounded" onclick="closeWishlistModal()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function changeImage(element) {
+            document.getElementById('mainImage').src = element.src;
+        }
+
+        function openWishlistModal() {
+            document.getElementById('wishlistModal').classList.remove('hidden');
+        }
+
+        function closeWishlistModal() {
+            document.getElementById('wishlistModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
