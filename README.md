@@ -1,1 +1,2 @@
 # Eyewear-website
+The Glasses Gallery is a frontend-focused e-commerce website for buying eyewear glasses. I designed and developed a user-friendly interface to showcase a wide range of glasses. The website features a responsive design, ensuring a seamless experience across devices. I used [technologies used, e.g., HTML, CSS, JavaScript] to build the frontend. The next step is to integrate a backend and payment gateway to complete the project.
